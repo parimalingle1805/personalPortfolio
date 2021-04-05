@@ -19,6 +19,7 @@ app.get("/work_exp", function (req, res) {
 app.get("/contact", function (req, res) {
   res.render("contact.ejs");
 });
-app.listen(3000, function () {
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
   console.log("App is Working!!!");
 });
