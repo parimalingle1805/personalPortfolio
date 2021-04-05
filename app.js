@@ -15,6 +15,14 @@ app.get("/certifications", (req, res) => {
     res.render("certifications.ejs");
 });
 
+app.get("/work_exp", (req, res) => {
+    res.render("work_exp.ejs");
+});
+
+app.get("/contact", (req, res) => {
+    res.render("contact.ejs");
+});
+
 app.listen(3000, () => {
     console.log("App is Working!!!");
 });

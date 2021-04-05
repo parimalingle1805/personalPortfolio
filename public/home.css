@@ -172,7 +172,7 @@ h6 {
 .socials {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 35% 35% 35%;
+    grid-template-rows: 50% 50%;
 }
 
 .social {
@@ -189,7 +189,8 @@ h6 {
 
 #content,
 #project_content,
-#certification_content {
+#certification_content,
+#work_content {
     background: rgba(255, 255, 255, 0.2);
     height: max-content;
     position: fixed;
@@ -208,7 +209,8 @@ h6 {
     }
     #content,
     #project_content,
-    #certification_content {
+    #certification_content,
+    #work_content {
         position: relative;
         left: 0%;
         width: 100%;
@@ -335,7 +337,8 @@ h6 {
     grid-template-columns: 50% 50%;
 }
 
-#certification_content {
+#certification_content,
+#work_content {
     scroll-behavior: smooth;
 }
 
@@ -343,4 +346,24 @@ h6 {
     display: flex;
     justify-content: center;
     width: 90%;
+}
+
+
+/* Contact Section */
+
+#contactGrid {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 23em;
+}
+
+.holds-the-iframe {
+    background: url(./loading.gif) center center no-repeat;
+}
+
+.contactGridItem {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    justify-content: center;
 }
